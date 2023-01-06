@@ -1,24 +1,28 @@
 import React from "react";
 import "./App.css";
+import { Row, Col, Container } from "react-bootstrap";
 // import Datatable from "./components/Datatable";
+// import Example from "./components/Example";
+import Header from "./components/Header";
 
 function App() {
   return (
-    <div className="container">
-      <div className="row">
-        <div className="col-sm-12">
-          <h1>Header</h1>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-sm-4">
+    <Container>
+      <Row>
+        <Col sm={12} border="primary">
+          <Header />
+        </Col>
+      </Row>
+      <Row>
+        <Col sm={4}>
           <h1>Sidebar</h1>
-        </div>
-      </div>
-      <div className="col-sm-8">
-        <h1>Datatable</h1>
-      </div>
-    </div>
+        </Col>
+      </Row>
+      <Col sm={8}>
+        <h1>Content</h1>
+      </Col>
+    </Container>
+    // <Example />
   );
 }
 
