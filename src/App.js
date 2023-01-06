@@ -2,15 +2,14 @@ import React from "react";
 import "./App.css";
 import { Row, Col, Container } from "react-bootstrap";
 // import Datatable from "./components/Datatable";
-// import Example from "./components/Example";
-import Header from "./components/Header";
+// import Header from "./components/Header";
 
 function App() {
   return (
     <Container>
       <Row>
         <Col sm={12} border="primary">
-          <Header />
+          <h1>Header</h1>
         </Col>
       </Row>
       <Row>
@@ -22,7 +21,6 @@ function App() {
         <h1>Content</h1>
       </Col>
     </Container>
-    // <Example />
   );
 }
 
