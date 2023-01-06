@@ -3,6 +3,7 @@ import "./App.css";
 import { Row, Col, Container } from "react-bootstrap";
 import Header from "./components/Header";
 import Datatable from "./components/Datatable";
+import Sidebar from "./components/Sidebar";
 
 function App() {
   return (
@@ -12,14 +13,16 @@ function App() {
           <Header />
         </Col>
       </Row>
+
       <Row>
         <Col sm={4}>
-          <h1>Sidebar</h1>
+          <Sidebar />
+        </Col>
+
+        <Col sm={8}>
+          <Datatable />
         </Col>
       </Row>
-      <Col sm={8}>
-        <Datatable />
-      </Col>
     </Container>
   );
 }
