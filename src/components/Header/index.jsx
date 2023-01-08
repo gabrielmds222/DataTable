@@ -1,19 +1,14 @@
-import {
-  Container,
-  Nav,
-  Navbar,
-  NavDropdown,
-  Button,
-  Form,
-} from "react-bootstrap";
+import { Container, Nav, Navbar, Button, Form } from "react-bootstrap";
+
+import { List } from "phosphor-react";
 
 function Header() {
   return (
     <header>
-      <Navbar bg="dark" expand="lg">
+      <Navbar bg="light" expand="lg">
         <Container fluid>
-          <Navbar.Brand href="#" style={{ color: "#fff" }}>
-            Navbar scroll
+          <Navbar.Brand href="#" style={{ color: "#333" }}>
+            CIOSP Report
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
@@ -22,14 +17,8 @@ function Header() {
               style={{ maxHeight: "100px" }}
               navbarScroll
             >
-              <Nav.Link href="#action1" style={{ color: "#fff" }}>
-                Home
-              </Nav.Link>
-              <Nav.Link href="#action2" style={{ color: "#fff" }}>
-                Link
-              </Nav.Link>
-              <Nav.Link href="#" disabled style={{ color: "#fff" }}>
-                Link
+              <Nav.Link href="#action1">
+                <List size={32} />
               </Nav.Link>
             </Nav>
             <Form className="d-flex">
