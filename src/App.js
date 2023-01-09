@@ -22,6 +22,9 @@ function App() {
         <Col sm={10}>
           <Datatable />
         </Col>
+        <Col sm={10}>
+          <h1>Teste</h1>
+        </Col>
       </Row>
     </div>
   );
