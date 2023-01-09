@@ -7,42 +7,23 @@ import Sidebar from "./components/Sidebar";
 
 function App() {
   return (
-    <Container fluid>
-      <Row lg={12}>
-        <Col sm={12} border="primary">
+    <div className="body">
+      <Row>
+        <Col sm={12}>
           <Header />
         </Col>
       </Row>
 
-      <Row lg={12}>
-        <Col sm={4}>
+      <Row>
+        <Col sm={2}>
           <Sidebar />
         </Col>
 
-        <Col sm={8}>
+        <Col sm={10}>
           <Datatable />
         </Col>
       </Row>
-    </Container>
-    // <Container>
-    //   <Row lg={12}>
-    //     <Col sm={12} border="primary">
-    //       <Header />
-    //     </Col>
-    //   </Row>
-
-    //   <Row lg={12}>
-    //     <Col sm={4}>
-    //       {/* <Sidebar /> */}
-    //       <h1>Qualquer coisa</h1>
-    //     </Col>
-
-    //     <Col sm={8}>
-    //       {/* <Datatable /> */}
-    //       <h1>Qualquer coisa</h1>
-    //     </Col>
-    //   </Row>
-    // </Container>
+    </div>
   );
 }
 
