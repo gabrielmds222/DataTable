@@ -1,3 +1,5 @@
+import React, { useState, useEffect } from "react";
+
 import { Container, Nav, Navbar, Button, Form } from "react-bootstrap";
 
 import { List, Repeat, User, SignOut } from "phosphor-react";
@@ -5,6 +7,26 @@ import { List, Repeat, User, SignOut } from "phosphor-react";
 import "./style.css";
 
 function Header() {
+  const [timeInSeconds, setTimeInSeconds] = useState(60 * 60);
+
+  const minutes = Math.floor(timeInSeconds / 60);
+  const seconds = timeInSeconds % 60;
+
+  useEffect(() => {
+    if (timeInSeconds === 0) {
+      alert("Sessão finalizada");
+      return;
+    } else {
+      setTimeout(() => {
+        setTimeInSeconds(timeInSeconds - 1);
+      }, 1000);
+    }
+  }, [timeInSeconds]);
+
+  // function repeatCount() {
+  //   setTimeInSeconds(60 * 60);
+  // }
+
   return (
     <header>
       <Navbar bg="light" expand="lg">
@@ -12,7 +34,7 @@ function Header() {
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
-              className="me-auto my-2 my-lg-0"
+              className="me-auto my-2 my-lg-0 navbarLeft"
               style={{ maxHeight: "20px", alignItems: "center" }}
               navbarScroll
             >
@@ -26,10 +48,14 @@ function Header() {
             <Nav style={{ alignItems: "center" }}>
               <div className="timerContainer">
                 <Navbar.Text>Sua sessão expira em: </Navbar.Text>
-                <div className="timer">59:00</div>
+                <div className="timer">
+                  {minutes.toString().padStart(2, "0")}:
+                  {seconds.toString().padStart(2, "0")}
+                </div>
                 <Button
                   variant="outline-secondary"
                   style={{ backgroundColor: "#F4F4F4" }}
+                  // onClick={repeatCount}
                 >
                   <Repeat size={14} color="#000" weight="bold" />
                 </Button>
@@ -41,7 +67,7 @@ function Header() {
                 </Navbar.Text>
               </div>
               <div className="signout">
-                <SignOut size={14} color="#000" weight="bold" />{" "}
+                <SignOut size={14} color="#000" weight="bold" />
               </div>
             </Nav>
           </Navbar.Collapse>
