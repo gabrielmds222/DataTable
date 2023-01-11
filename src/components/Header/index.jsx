@@ -31,15 +31,17 @@ function Header() {
                   variant="outline-secondary"
                   style={{ backgroundColor: "#F4F4F4" }}
                 >
-                  <Repeat size={14} color="#000" />
+                  <Repeat size={14} color="#000" weight="bold" />
                 </Button>
               </div>
               <div className="user">
-                <User size={24} color="#000" />
-                <Navbar.Text>Gabriel Medeiros da Silva</Navbar.Text>
+                <User size={14} color="#000" weight="bold" />
+                <Navbar.Text style={{ marginLeft: "10px" }}>
+                  Gabriel Medeiros da Silva
+                </Navbar.Text>
               </div>
               <div className="signout">
-                <SignOut size={24} color="#000" />
+                <SignOut size={14} color="#000" weight="bold" />{" "}
               </div>
             </Nav>
           </Navbar.Collapse>
