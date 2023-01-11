@@ -1,6 +1,6 @@
 import { Container, Nav, Navbar, Button, Form } from "react-bootstrap";
 
-import { List } from "phosphor-react";
+import { List, Repeat, User, SignOut } from "phosphor-react";
 
 import "./style.css";
 
@@ -23,8 +23,24 @@ function Header() {
                 CIOSP Report
               </Navbar.Brand>
             </Nav>
-            <Nav>
-              <Navbar.Text>Sua sessão expira em:</Navbar.Text>
+            <Nav style={{ alignItems: "center" }}>
+              <div className="timerContainer">
+                <Navbar.Text>Sua sessão expira em: </Navbar.Text>
+                <div className="timer">59:00</div>
+                <Button
+                  variant="outline-secondary"
+                  style={{ backgroundColor: "#F4F4F4" }}
+                >
+                  <Repeat size={14} color="#000" />
+                </Button>
+              </div>
+              <div className="user">
+                <User size={24} color="#000" />
+                <Navbar.Text>Gabriel Medeiros da Silva</Navbar.Text>
+              </div>
+              <div className="signout">
+                <SignOut size={24} color="#000" />
+              </div>
             </Nav>
           </Navbar.Collapse>
         </Container>
