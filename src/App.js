@@ -3,7 +3,7 @@ import "./App.css";
 import { Row, Col, Container } from "react-bootstrap";
 import Header from "./components/Header";
 import Datatable from "./components/Datatable";
-import Sidebar from "./components/Sidebar";
+import BarraLateral from "./components/BarraLateral";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
 
       <Row>
         <Col sm={2}>
-          <Sidebar />
+          <BarraLateral />
         </Col>
 
         <Col sm={10}>

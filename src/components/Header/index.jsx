@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { Container, Nav, Navbar, Button, Form } from "react-bootstrap";
 
 import { List, Repeat, User, SignOut } from "phosphor-react";
+import { useProSidebar } from "react-pro-sidebar";
 
 import "./style.css";
 
@@ -11,6 +12,8 @@ function Header() {
 
   const minutes = Math.floor(timeInSeconds / 60);
   const seconds = timeInSeconds % 60;
+
+  const { collapseSidebar } = useProSidebar();
 
   useEffect(() => {
     if (timeInSeconds === 0) {
@@ -38,9 +41,9 @@ function Header() {
               style={{ maxHeight: "20px", alignItems: "center" }}
               navbarScroll
             >
-              <Nav.Link href="#action1">
-                <List size={24} className="burger" color="#000" />
-              </Nav.Link>
+              <button onClick={() => collapseSidebar()} className="burger">
+                <List size={14} color="#000" weight="bold" />
+              </button>
               <Navbar.Brand href="#" className="logo">
                 CIOSP Report
               </Navbar.Brand>
@@ -54,7 +57,7 @@ function Header() {
                 </div>
                 <Button
                   variant="outline-secondary"
-                  style={{ backgroundColor: "#F4F4F4" }}
+                  style={{ backgroundColor: "#F4F4F4", border: "none" }}
                   // onClick={repeatCount}
                 >
                   <Repeat size={14} color="#000" weight="bold" />
