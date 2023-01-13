@@ -51,7 +51,7 @@ function Header() {
             <Nav style={{ alignItems: "center" }}>
               <div className="timerContainer">
                 <Navbar.Text>Sua sessão expira em: </Navbar.Text>
-                <div>
+                <div className="countdown">
                   <div className="timer">
                     {minutes.toString().padStart(2, "0")}:
                     {seconds.toString().padStart(2, "0")}
