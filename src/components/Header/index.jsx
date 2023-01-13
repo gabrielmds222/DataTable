@@ -51,17 +51,19 @@ function Header() {
             <Nav style={{ alignItems: "center" }}>
               <div className="timerContainer">
                 <Navbar.Text>Sua sessão expira em: </Navbar.Text>
-                <div className="timer">
-                  {minutes.toString().padStart(2, "0")}:
-                  {seconds.toString().padStart(2, "0")}
+                <div>
+                  <div className="timer">
+                    {minutes.toString().padStart(2, "0")}:
+                    {seconds.toString().padStart(2, "0")}
+                  </div>
+                  <Button
+                    variant="outline-secondary"
+                    style={{ backgroundColor: "#F4F4F4", border: "none" }}
+                    // onClick={repeatCount}
+                  >
+                    <Repeat size={14} color="#000" weight="bold" />
+                  </Button>
                 </div>
-                <Button
-                  variant="outline-secondary"
-                  style={{ backgroundColor: "#F4F4F4", border: "none" }}
-                  // onClick={repeatCount}
-                >
-                  <Repeat size={14} color="#000" weight="bold" />
-                </Button>
               </div>
               <div className="user">
                 <User size={14} color="#000" weight="bold" />
