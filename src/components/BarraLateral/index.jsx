@@ -18,19 +18,16 @@ function BarraLateral() {
         <Menu>
           <MenuItem
             icon={<HouseLine size={14} color="#b8c7ce" weight="fill" />}
-            className="items"
           >
             Home
           </MenuItem>
           <MenuItem
             icon={<MagnifyingGlass size={14} color="#b8c7ce" weight="fill" />}
-            className="items"
           >
             Consulta
           </MenuItem>
           <MenuItem
             icon={<PencilSimple size={14} color="#b8c7ce" weight="fill" />}
-            className="items"
           >
             Complemento
           </MenuItem>
