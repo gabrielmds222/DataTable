@@ -20,25 +20,11 @@ function App() {
         <Col sm={2}>
           <BarraLateral />
         </Col>
-        <Col sm={10}>Rotas</Col>
+        <Col sm={10}>
+          <Datatable />
+        </Col>
       </Row>
     </div>
-    // <Row>
-    //   <Col md={8}>
-    //     <div style={{ backgroundColor: "red" }}>md="8"</div>
-    //     <Row>
-    //       <Col md={6}>
-    //         <div style={{ backgroundColor: "blue" }}>md="6"</div>
-    //       </Col>
-    //       <Col md={6}>
-    //         <div style={{ backgroundColor: "green" }}>md="6"</div>
-    //       </Col>
-    //     </Row>
-    //   </Col>
-    //   <Col md={4}>
-    //     <div style={{ backgroundColor: "purple" }}>md="6"</div>
-    //   </Col>
-    // </Row>
   );
 }
 
