@@ -3,3 +3,26 @@
   min-height: 100%;
   background-color: #ecf0f5;
 }
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.title {
+  font-size: 24px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: "#333";
+  align-items: center;
+  margin-left: 10px;
+}
+
+.table-container {
+  background: #fff;
+  padding: 12px;
+  border-radius: 2px;
+}
