@@ -7,6 +7,10 @@ import BarraLateral from "./components/BarraLateral";
 import { Layout } from "phosphor-react";
 // import Footer from "./components/Footer";
 
+import Rota from "./routes";
+
+import Home from "./pages/Home";
+
 function App() {
   return (
     <div className="body">
@@ -16,7 +20,7 @@ function App() {
           <BarraLateral />
         </Col>
         <Col>
-          <Datatable />
+          <Rota />
           <Row>
             <Col>
               <h1>Footer</h1>
