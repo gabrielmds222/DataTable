@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { HouseLine, MagnifyingGlass, PencilSimple } from "phosphor-react";
 
 import { Sidebar, Menu, MenuItem, useProSidebar } from "react-pro-sidebar";
+import { Link } from "react-router-dom";
 
 function BarraLateral() {
   const { collapseSidebar } = useProSidebar();
@@ -16,16 +17,21 @@ function BarraLateral() {
         style={{ color: "#b8c7ce", fontSize: "14px" }}
       >
         <Menu>
-          <MenuItem
-            icon={<HouseLine size={14} color="#b8c7ce" weight="fill" />}
-          >
-            Home
-          </MenuItem>
-          <MenuItem
-            icon={<MagnifyingGlass size={14} color="#b8c7ce" weight="fill" />}
-          >
-            Consulta
-          </MenuItem>
+          <Link to="/">
+            <MenuItem
+              icon={<HouseLine size={14} color="#b8c7ce" weight="fill" />}
+            >
+              Home
+            </MenuItem>
+          </Link>
+          <Link to="/editar">
+            <MenuItem
+              icon={<MagnifyingGlass size={14} color="#b8c7ce" weight="fill" />}
+            >
+              Consulta
+            </MenuItem>
+          </Link>
+
           <MenuItem
             icon={<PencilSimple size={14} color="#b8c7ce" weight="fill" />}
           >
