@@ -1,0 +1,9 @@
+.page-header {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.table-container {
+  border-top: 3px solid cyan;
+}
