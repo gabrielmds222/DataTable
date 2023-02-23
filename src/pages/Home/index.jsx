@@ -6,8 +6,10 @@ const Home = () => {
   return (
     <>
       <div className="page-header">
-        <p>Lista geral de relatórios</p>
-        <p>Página de gerenciamento de relatórios</p>
+        <p style={{ fontSize: "24px" }}>Lista geral de relatórios</p>
+        <p style={{ marginLeft: "10px" }}>
+          Página de gerenciamento de relatórios
+        </p>
       </div>
       <div className="table-container">
         <Datatable />

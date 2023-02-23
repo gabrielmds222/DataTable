@@ -33,7 +33,7 @@ function Header() {
   return (
     <header>
       <Navbar bg="light" expand="lg">
-        <Container fluid>
+        <div style={{ justifyContent: "space-between", width: "100%" }}>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
@@ -76,7 +76,7 @@ function Header() {
               </div>
             </Nav>
           </Navbar.Collapse>
-        </Container>
+        </div>
       </Navbar>
     </header>
   );

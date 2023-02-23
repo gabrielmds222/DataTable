@@ -12,24 +12,7 @@ import Rota from "./routes";
 import Home from "./pages/Home";
 
 function App() {
-  return (
-    <div className="body">
-      <Header />
-      <Row>
-        <Col md={2}>
-          <BarraLateral />
-        </Col>
-        <Col>
-          <Rota />
-          <Row>
-            <Col>
-              <h1>Footer</h1>
-            </Col>
-          </Row>
-        </Col>
-      </Row>
-    </div>
-  );
+  return <div></div>;
 }
 
 export default App;

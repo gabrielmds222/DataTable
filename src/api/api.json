@@ -1,0 +1,104 @@
+{
+  "dados": [
+    {
+      "data": "26/01/2023",
+      "turno": 2,
+      "PM": true,
+      "PC": true,
+      "GMN": false,
+      "ITEP": true,
+      "CBMRN": false,
+      "SEAP": true
+    },
+    {
+      "data": "26/01/2023",
+      "turno": 1,
+      "PM": true,
+      "PC": true,
+      "GMN": true,
+      "ITEP": true,
+      "CBMRN": true,
+      "SEAP": false
+    },
+    {
+      "data": "25/01/2023",
+      "turno": 2,
+      "PM": true,
+      "PC": true,
+      "GMN": false,
+      "ITEP": true,
+      "CBMRN": false,
+      "SEAP": true
+    },
+    {
+      "data": "25/01/2023",
+      "turno": 1,
+      "PM": true,
+      "PC": true,
+      "GMN": false,
+      "ITEP": true,
+      "CBMRN": false,
+      "SEAP": true
+    },
+    {
+      "data": "24/01/2023",
+      "turno": 2,
+      "PM": false,
+      "PC": true,
+      "GMN": true,
+      "ITEP": true,
+      "CBMRN": false,
+      "SEAP": true
+    },
+    {
+      "data": "24/01/2023",
+      "turno": 1,
+      "PM": true,
+      "PC": false,
+      "GMN": false,
+      "ITEP": true,
+      "CBMRN": false,
+      "SEAP": true
+    },
+    {
+      "data": "23/01/2023",
+      "turno": 2,
+      "PM": true,
+      "PC": true,
+      "GMN": true,
+      "ITEP": true,
+      "CBMRN": false,
+      "SEAP": true
+    },
+    {
+      "data": "23/01/2023",
+      "turno": 1,
+      "PM": true,
+      "PC": false,
+      "GMN": false,
+      "ITEP": true,
+      "CBMRN": false,
+      "SEAP": true
+    },
+    {
+      "data": "22/01/2023",
+      "turno": 2,
+      "PM": true,
+      "PC": true,
+      "GMN": true,
+      "ITEP": true,
+      "CBMRN": true,
+      "SEAP": true
+    },
+    {
+      "data": "22/01/2023",
+      "turno": 1,
+      "PM": true,
+      "PC": false,
+      "GMN": true,
+      "ITEP": true,
+      "CBMRN": true,
+      "SEAP": true
+    }
+  ]
+}
